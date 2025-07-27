@@ -25,3 +25,32 @@ This is a beginner-friendly Django web application that manages cricket club act
 | Deployment  | (Add here if deployed) |
 
 ---
+setup instructions>>>
+
+# 1. Clone the repo
+git clone https://github.com/Mahi9390/Django_For_Beginners-Project-.git
+cd Django_For_Beginners-Project-
+
+# 2. Create virtual environment & activate it
+python -m venv myenv
+myenv\Scripts\activate  # On Windows
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Apply migrations
+python manage.py migrate
+
+# 5. Run the server
+python manage.py runserver
+
+Folder structure>>>
+
+cricket_club/
+├── cricket_club/        # Project settings
+├── players/             # Main app for cricket logic
+├── templates/           # HTML files
+├── static/              # CSS, JS, images
+├── db.sqlite3           # SQLite DB (if using)
+└── manage.py
+
